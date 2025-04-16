@@ -9,7 +9,7 @@ COPY . /app
 
 # Install dependencies (gdal, etc.)
 RUN apt-get update && \
-    apt-get install libgdal-dev gdal-bin
+    apt-get install -y libgdal-dev gdal-bin
 
 # Install any needed dependencies specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
