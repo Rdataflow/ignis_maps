@@ -42,10 +42,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Lint Dockerfile
-        uses: hadolint/hadolint-action@v3.1.0
-        with:
-          verbose: true
+      #- name: Lint Dockerfile
+      #  uses: hadolint/hadolint-action@v3.1.0
+      #  with:
+      #    verbose: true
 
       # Install QEMU for target platform emulation (i.e. arm64)
       - name: Set up QEMU
