@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY . /app
 
-# Install dependencies (gdal, etc)
+# Install dependencies (gdal, etc.)
 RUN apk update \
     && apk add --update gdal
 
