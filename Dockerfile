@@ -8,8 +8,9 @@ WORKDIR /app
 COPY . /app
 
 # Install dependencies (gdal, etc.)
-RUN apk update \
-    && apk add --update gdal-dev
+RUN apk update && \
+    apk add --update gdal-dev && \
+    apk add --update gcc    
 
 # Install any needed dependencies specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
