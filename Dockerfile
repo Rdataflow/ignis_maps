@@ -9,7 +9,7 @@ COPY . /app
 
 # Install dependencies (gdal, etc.)
 RUN apk update \
-    && apk add --update gdal
+    && apk add --update gdal-dev
 
 # Install any needed dependencies specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
